@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New User </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url("https://c1.wallpaperflare.com/preview/972/400/963/money-home-coin-investment.jpg");
+            margin: 0;
+            background-size: cover;
+            padding: 0;
+        }
+
+        header {
+            background-color: #253b80;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px; 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"]{
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #1c38c4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .container
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+       
+
+        button:hover {
+            background-color: #588578;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>New Account Opening</h1>
+    </header>
+    <main> <div class="container">
+    <form method="post" action="new.php">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        
+        <label for="address" > Address: </label>
+        <textarea style="width: 99%;" rows="5"id="address" name="address"> </textarea><br><br>
+        <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="acctype">Account Type:</label>
+            <select id="acctype" name="acctype" required>
+                <option value="">Select an option</option>
+                <option value="savings">Savings Account</option>
+                <option value="savings">Curent Account</option>
+            </select>
+            <label for="aadhar">Aadhar number:</label>
+            <input type="number" style="width: 98%; padding-bottom: 1%;"  id="aadhar" name="aadhar" required>
+<br><br>
+            <label for="pan">PAN number:</label>
+            <input type="text" style="width: 98%;padding-bottom: 1%;" id="pan" name="pan" required>
+<br><br>
+
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other" required> Other
+            </label>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+            </label>
+            <center>
+            <button type="submit">Submit</button></center>
+        </form>
+    </div>
+    </main>
+</body>
+</html>
